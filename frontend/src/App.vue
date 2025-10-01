@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- HEADER -->
     <header class="header">
       <div class="logo-container">
         <img src="/src/assets/logo.png" alt="Logo Buses Bio Bío" class="logo" />
@@ -15,14 +14,12 @@
       </nav>
     </header>
 
-    <!-- BANNER PRINCIPAL -->
     <div class="header-banner">
       <div class="header-overlay">
         <h1 class="main-title">Acercamos a nuestra gente, uniendo regiones</h1>
       </div>
     </div>
 
-    <!-- FRANJA DE OPCIONES -->
     <div class="servicios-nav">
       <button
           class="servicio-btn"
@@ -66,10 +63,8 @@
       </button>
     </div>
 
-    <!-- ⬇️ BUSCADOR SOLO CUANDO ES 'COMPRA' -->
     <BuscadorBoletos v-if="seccionActiva === 'compra'" />
 
-    <!-- CONTENIDO DE OTRAS SECCIONES -->
     <main>
       <div v-if="seccionActiva === 'cambia'" class="seccion-vacia">
         <h2>Sección de Cambio de Pasajes</h2>
@@ -89,7 +84,6 @@
       </div>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <p>© {{ currentYear }} Buses Bio Bío. Todos los derechos reservados.</p>
     </footer>
@@ -107,7 +101,7 @@ export default {
   data() {
     return {
       currentYear: new Date().getFullYear(),
-      seccionActiva: "compra", // 'compra', 'cambia', 'confirma', etc.
+      seccionActiva: "compra",
     };
   },
 };
@@ -127,7 +121,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -150,7 +143,6 @@ body {
   gap: 5px;
 }
 
-/* Banner */
 .header-banner {
   background-image: url("https://i.imgur.com/K1LgO3u.jpeg");
   background-size: cover;
@@ -174,7 +166,6 @@ body {
   line-height: 1.2;
 }
 
-/* Franja de opciones */
 .servicios-nav {
   display: flex;
   justify-content: center;
@@ -211,7 +202,6 @@ body {
   margin-bottom: 5px;
 }
 
-/* Secciones vacías */
 .seccion-vacia {
   display: flex;
   flex-direction: column;
@@ -222,7 +212,6 @@ body {
   color: #333;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 20px;
