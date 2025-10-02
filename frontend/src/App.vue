@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="header">
+     <header class="header">
       <div class="logo-container">
         <img src="/src/assets/logo.png" alt="Logo Buses Bio Bío" class="logo" />
       </div>

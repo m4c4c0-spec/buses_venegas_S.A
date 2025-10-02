@@ -1,3 +1,10 @@
+```
+# Node / Vue.js (Frontend)
+node_modules/
+dist/
+dist-ssr/
+*.local
+
 # Logs
 logs
 *.log
@@ -7,24 +14,39 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
+# Test coverage
+coverage/
+.cypress/
+cypress/videos/
+cypress/screenshots/
 
-/cypress/videos/
-/cypress/screenshots/
+# Java / Spring Boot (Backend)
+/target/
+*.class
+*.jar
+*.war
+*.ear
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+*.iml
+
+# Gradle
+.gradle/
+build/
+out/
+
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
 *.tsbuildinfo
+
+# MacOS
+.DS_Store
+```
+
